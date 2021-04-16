@@ -9,8 +9,7 @@ export default class ScrollSuave {
 
     this.scrollToSection = this.scrollToSection.bind(this);
   }
-
-
+  
   scrollToSection(event) {
     event.preventDefault();
     const href = event.currentTarget.getAttribute('href');
