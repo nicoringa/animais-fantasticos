@@ -11,7 +11,7 @@ export default class TabNav {
       section.classList.remove(this.activeClass);
     });
     const direcao = this.tabContent[index].dataset.anime;
-    this.tabContent[index].classList.add('ativo', direcao);
+    this.tabContent[index].classList.add(this.activeClass, direcao);
   }
 
   // Adiciona os eventos nas tabs
@@ -27,5 +27,6 @@ export default class TabNav {
       this.activeTab(0);
       this.addTabNavEvent();
     }
-  } 
+  }
 }
+
